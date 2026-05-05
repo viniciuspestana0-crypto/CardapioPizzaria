@@ -3,85 +3,246 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Pizzaria</title>
     <style>
       * {
         padding: 0;
         margin: 0;
       }
+
+      /* Ajustar as fontes */
+      .Tipo,
+      #Titulo {
+        font-family:
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          Oxygen,
+          Ubuntu,
+          Cantarell,
+          "Open Sans",
+          "Helvetica Neue",
+          sans-serif;
+      }
+
       /* Faixa da pizzaria */
       header {
         background-color: brown;
         display: flex;
       }
 
-      header h1 {
+      header #Titulo {
         margin-top: 50px;
         margin-left: 50%;
       }
 
-      main #Titulo {
-        display: flex;
-        justify-content: center;
-      }
-
       /* Menu da pizzaria */
-      h2 {
+      .Tipo {
         display: flex;
         justify-content: center;
+        margin-top: 20px;
       }
 
-      main section article {
+      .Itens {
+        margin-top: 25px;
         display: flex;
         justify-content: space-around;
       }
 
+      .Container {
+        border: 1px solid;
+        width: 200px;
+        height: 250px;
+        border-radius: 10px 10px 10px 10px;
+        position: relative;
+      }
+      h3 {
+        display: flex;
+        justify-content: center;
+      }
+      p {
+        display: flex;
+        margin-right: 5px;
+      }
+      span {
+        position: absolute;
+        color: green;
+        bottom: 0;
+        right: 0;
+      }
+
+      .Imagem {
+        display: flex;
+        justify-self: center;
+        width: 100autopx;
+        height: 100px;
+      }
       /* Footer */
 
       footer {
-        display: flex;
+        margin-top: 20px;
+        position: relative;
+        bottom: 0;
+        width: 100%;
         background-color: brown;
+      }
+
+      .Contato {
+        display: flex;
+        justify-content: center;
       }
     </style>
   </head>
   <body>
     <!-- Faixa da pizzaria -->
     <header>
-      <img src="pngwing.com.png" width="200px" alt="Logo da pizzaria" />
-      <h1>Cardápio online</h1>
+      <img src="Imagens/Logo.png" width="150px" alt="Logo da pizzaria" />
+      <h1 id="Titulo">Cardápio online</h1>
     </header>
 
     <!-- Cardapio -->
     <main>
-      <section>
-        <h2>Pizza Salgadas</h2>
+      <h2 class="Tipo">Pizza Salgadas</h2>
 
-        <article>
-          <img src="" alt="" />
-          <h3>Pizza de Peperoni</h3>
-          <p>Igredientes:</p>
-          <span>R$ 40,00 </span>
+      <section class="Itens">
+        <article class="Container">
+          <img
+            class="Imagem"
+            src="Imagens/Pizza de Calabresa.png"
+            alt="Imagem ilustrativa"
+          />
+          <h3>Pizza de Calabresa</h3>
+          <p>
+            Ingredientes: Molho de tomate, muçarela (em algumas regiões),
+            linguiça calabresa fatiada, cebola e orégano.
+          </p>
+          <span>R$ 44,00 </span>
         </article>
 
-        <article>
-          <img src="" alt="" />
-          <h3>Pizza de Peperoni</h3>
-          <p>Igredientes:</p>
-          <span>R$ 40,00 </span>
+        <article class="Container">
+          <img
+            class="Imagem"
+            src="Imagens/Pizza Portuguesa.png"
+            alt="Imagem ilustrativa"
+          />
+          <h3>Pizza Portuguesa</h3>
+          <p>
+            Ingredientes: Molho de tomate, muçarela, presunto, ovos cozidos,
+            cebola, ervilha, milho e azeitonas.
+          </p>
+          <span>R$ 44,00 </span>
         </article>
 
-        <article>
-          <img src="" alt="" />
-          <h3>Pizza de Peperoni</h3>
-          <p>Igredientes:</p>
-          <span>R$ 40,00 </span>
+        <article class="Container">
+          <img
+            class="Imagem"
+            src="Imagens/Pizza de Frango com Catupiry.png"
+            alt="Imagem ilustrativa"
+          />
+          <h3>Pizza de Frango com Catupiry</h3>
+          <p>
+            Ingredientes: Molho de tomate, muçarela, frango desfiado temperado e
+            requeijão cremoso (estilo Catupiry).
+          </p>
+          <span>R$ 44,00 </span>
+        </article>
+      </section>
+
+      <h2 class="Tipo">Pizza Doces</h2>
+
+      <section class="Itens">
+        <article class="Container">
+          <img
+            class="Imagem"
+            src="Imagens/Pizza de Brigadeiro.png"
+            alt="Imagem ilustrativa"
+          />
+          <h3>Pizza de Brigadeiro</h3>
+          <p>
+            Ingredientes: Chocolate ao leite (ou granulado), leite condensado e,
+            às vezes, granulado por cima.
+          </p>
+          <span>R$ 55,00 </span>
+        </article>
+
+        <article class="Container">
+          <img
+            class="Imagem"
+            src="Imagens/Pizza de Banana com Canela.jpg"
+            alt="Imagem ilustrativa"
+          />
+          <h3>Pizza de Banana com Canela</h3>
+          <p>
+            Ingredientes: Fatias de banana, açúcar, canela e, frequentemente,
+            leite condensado.
+          </p>
+          <span>R$ 55,00 </span>
+        </article>
+
+        <article class="Container">
+          <img
+            class="Imagem"
+            src="Imagens/Pizza de Romeu e Julieta.png"
+            alt="Imagem ilustrativa"
+          />
+          <h3>Pizza de Romeu e Julieta</h3>
+          <p>
+            Ingredientes: Queijo muçarela (ou queijo branco) coberto com
+            generosas fatias ou camadas de goiabada.
+          </p>
+          <span>R$ 55,00 </span>
+        </article>
+      </section>
+
+      <h2 class="Tipo">Bebidas</h2>
+
+      <section class="Itens">
+        <article class="Container">
+          <img
+            class="Imagem"
+            src="Imagens/Refrigerante.png"
+            alt="Imagem ilustrativa"
+          />
+          <h3>Refrigerante (Coca-Cola ou Guaraná)</h3>
+          <p>
+            Ingredientes principais: Água gaseificada, açúcar (ou edulcorantes),
+            extrato de noz de cola ou guaraná e cafeína.
+          </p>
+          <span>R$ 7,00</span>
+        </article>
+
+        <article class="Container">
+          <img
+            class="Imagem"
+            src="Imagens/Suco Natural de Laranja.png"
+            alt="Imagem ilustrativa"
+          />
+          <h3>Suco Natural de Laranja</h3>
+          <p>
+            Ingredientes principais: Suco puro de laranjas espremidas na hora,
+            gelo e açúcar (opcional).
+          </p>
+          <span>R$ 9,00 </span>
+        </article>
+
+        <article class="Container">
+          <img
+            class="Imagem"
+            src="Imagens/Água Mineral.png"
+            alt="Imagem ilustrativa"
+          />
+          <h3>Água Mineral</h3>
+          <p>Igredientes: Água</p>
+          <span>R$ 400,00 </span>
         </article>
       </section>
     </main>
 
     <!-- Footer -->
     <footer>
-      <address>
+      <address class="Contato">
         <p>Somente online</p>
         <p>Telefone: <a href="tel:11999999999">(99) 99999-9999</a></p>
         <p>
