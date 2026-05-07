@@ -54,17 +54,16 @@
       .Container {
         border: 1px solid;
         width: 200px;
-        height: 250px;
+        height: 270px;
         border-radius: 10px 10px 10px 10px;
         position: relative;
       }
-      h3 {
+      .Produto {
         display: flex;
         justify-content: center;
       }
-      p {
-        display: flex;
-        margin-right: 5px;
+      .Igredientes {
+        justify-items: center;
       }
       span {
         position: absolute;
@@ -113,11 +112,15 @@
             src="Imagens/Pizza de Calabresa.png"
             alt="Imagem ilustrativa"
           />
-          <h3>Pizza de Calabresa</h3>
-          <p>
-            Ingredientes: Molho de tomate, muçarela (em algumas regiões),
-            linguiça calabresa fatiada, cebola e orégano.
-          </p>
+          <h3 class="Produto">Pizza de Calabresa</h3>
+          <ul class="Igredientes" class="Igredientes">
+            <li>Molho de tomate</li>
+            <li>muçarela</li>
+            <li>linguiça</li>
+            <li>calabresa</li>
+            <li>cebola</li>
+            <li>orégano</li>
+          </ul>
           <span>R$ 44,00 </span>
         </article>
 
@@ -127,11 +130,17 @@
             src="Imagens/Pizza Portuguesa.png"
             alt="Imagem ilustrativa"
           />
-          <h3>Pizza Portuguesa</h3>
-          <p>
-            Ingredientes: Molho de tomate, muçarela, presunto, ovos cozidos,
-            cebola, ervilha, milho e azeitonas.
-          </p>
+          <h3 class="Produto">Pizza Portuguesa</h3>
+          <ul class="Igredientes">
+            <li>Molho de tomate</li>
+            <li>muçarela</li>
+            <li>presunto</li>
+            <li>ovos cozidos</li>
+            <li>cebola</li>
+            <li>ervilha</li>
+            <li>milho</li>
+            <li>azeitonas</li>
+          </ul>
           <span>R$ 44,00 </span>
         </article>
 
@@ -141,11 +150,13 @@
             src="Imagens/Pizza de Frango com Catupiry.png"
             alt="Imagem ilustrativa"
           />
-          <h3>Pizza de Frango com Catupiry</h3>
-          <p>
-            Ingredientes: Molho de tomate, muçarela, frango desfiado temperado e
-            requeijão cremoso (estilo Catupiry).
-          </p>
+          <h3 class="Produto">Pizza de Frango com Catupiry</h3>
+          <ul class="Igredientes" class="Igredientes">
+            <li>Molho de tomate</li>
+            <li>muçarela</li>
+            <li>frango desfiado</li>
+            <li>requeijão</li>
+          </ul>
           <span>R$ 44,00 </span>
         </article>
       </section>
@@ -159,11 +170,12 @@
             src="Imagens/Pizza de Brigadeiro.png"
             alt="Imagem ilustrativa"
           />
-          <h3>Pizza de Brigadeiro</h3>
-          <p>
-            Ingredientes: Chocolate ao leite (ou granulado), leite condensado e,
-            às vezes, granulado por cima.
-          </p>
+          <h3 class="Produto">Pizza de Brigadeiro</h3>
+          <ul class="Igredientes" class="Igredientes">
+            <li>Chocolate ao leite</li>
+            <li>leite condensado</li>
+            <li>granulado</li>
+          </ul>
           <span>R$ 55,00 </span>
         </article>
 
@@ -173,11 +185,13 @@
             src="Imagens/Pizza de Banana com Canela.jpg"
             alt="Imagem ilustrativa"
           />
-          <h3>Pizza de Banana com Canela</h3>
-          <p>
-            Ingredientes: Fatias de banana, açúcar, canela e, frequentemente,
-            leite condensado.
-          </p>
+          <h3 class="Produto">Pizza de Banana com Canela</h3>
+          <ul class="Igredientes" class="Igredientes">
+            <li>banana</li>
+            <li>açúcar</li>
+            <li>canela</li>
+            <li>leite condensado</li>
+          </ul>
           <span>R$ 55,00 </span>
         </article>
 
@@ -187,11 +201,11 @@
             src="Imagens/Pizza de Romeu e Julieta.png"
             alt="Imagem ilustrativa"
           />
-          <h3>Pizza de Romeu e Julieta</h3>
-          <p>
-            Ingredientes: Queijo muçarela (ou queijo branco) coberto com
-            generosas fatias ou camadas de goiabada.
-          </p>
+          <h3 class="Produto">Pizza de Romeu e Julieta</h3>
+          <ul class="Igredientes" class="Igredientes">
+            <li>Queijo muçarela</li>
+            <li>goiabada</li>
+          </ul>
           <span>R$ 55,00 </span>
         </article>
       </section>
@@ -205,11 +219,13 @@
             src="Imagens/Refrigerante.png"
             alt="Imagem ilustrativa"
           />
-          <h3>Refrigerante (Coca-Cola ou Guaraná)</h3>
-          <p>
-            Ingredientes principais: Água gaseificada, açúcar (ou edulcorantes),
-            extrato de noz de cola ou guaraná e cafeína.
-          </p>
+          <h3 class="Produto">Refrigerante (Coca-Cola ou Guaraná)</h3>
+          <ul class="Igredientes" class="Igredientes">
+            <li>Água gaseificada</li>
+            <li>açúcar</li>
+            <li>guaraná</li>
+            <li>cafeína</li>
+          </ul>
           <span>R$ 7,00</span>
         </article>
 
@@ -219,12 +235,15 @@
             src="Imagens/Suco Natural de Laranja.png"
             alt="Imagem ilustrativa"
           />
-          <h3>Suco Natural de Laranja</h3>
+          <h3 class="Produto">Suco Natural de Laranja</h3>
+          <ul class="Igredientes" class="Igredientes">
+            <li>laranja</li>
+            <li>gelo</li>
+            <li>açúcar</li>
+          </ul>
           <p>
-            Ingredientes principais: Suco puro de laranjas espremidas na hora,
-            gelo e açúcar (opcional).
+            <span>R$ 9,00 </span>
           </p>
-          <span>R$ 9,00 </span>
         </article>
 
         <article class="Container">
@@ -233,8 +252,10 @@
             src="Imagens/Água Mineral.png"
             alt="Imagem ilustrativa"
           />
-          <h3>Água Mineral</h3>
-          <p>Igredientes: Água</p>
+          <h3 class="Produto">Água Mineral</h3>
+          <ul class="Igredientes" class="Igredientes">
+            <li>Água</li>
+          </ul>
           <span>R$ 400,00 </span>
         </article>
       </section>
